@@ -1,0 +1,96 @@
+// @import 'reset.scss';
+
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #fcd0ff;
+    color: #a34ada;
+    margin: 20px;
+}
+h1, h2, h3{
+    margin: 10px 0 20px 0;
+    color: #a34ada;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.6em;
+}
+h3{
+    font-size: 1.4em;
+}
+p, div{
+    margin: 0 0 20px 0;
+}
+label{
+    width: 150px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+input{
+    background-color: #fde2ff;
+    border: 1px solid #a34ada;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1.2em;
+    &:focus{
+        background-color: #ffffff;
+    }
+    + span{
+        font-size: 1.1em;
+        margin: 0 0 0 10px;
+    }
+}
+input[type=submit]{
+    border: 1px solid #a34ada;
+    background-color: #fde2ff;
+    padding: 5px 20px;
+    margin: 0 0 0 150px;
+    cursor: pointer;
+    &:hover{
+        background-color: #ffffff;
+    }
+}
+table{
+    border-collapse: collapse;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 50%;
+    margin: 0 0 0 150px;
+    th,td{
+        border-color: #a34ada;
+        border-style: solid;
+        border-width: 1px 0;
+        padding: 10px;
+        text-align: left;
+    }
+    th{
+        border-width: 0 0 1px 0;
+    }
+    th:last-child,
+    td:last-child{
+        text-align: right;
+    }
+    tbody{
+        tr{
+            &:nth-child(odd){
+                background-color: #f9ddfb;
+            }
+            &:last-child td{
+                border-width: 1px 0 0 0;
+            }
+        }
+    }
+}
+#react-container-1,
+#react-container-2{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #a34ada;
+    border-radius: 5px;
+}
+#react-container-2{
+    display: none;
+}
